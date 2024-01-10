@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Snake",
+			"Path": "C:\\Users\\User\\Documents\\Repositories\\Snake\\Source\\Snake.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SnakeEditor",
+			"Path": "C:\\Users\\User\\Documents\\Repositories\\Snake\\Source\\SnakeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,2 @@
+C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\Definitions.Snake.h
+C:\Users\User\Documents\Repositories\Snake\Source\Snake\Snake.h

@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Snake.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\SnakeEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\Snake.cpp.obj"
+"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\SnakeGameModeBase.cpp.obj"
+"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\Snake.init.gen.cpp.obj"
+"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\SnakeGameModeBase.gen.cpp.obj"
+"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\Default.rc2.res"
+/OUT:"C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\UE4Editor-Snake.lib"
