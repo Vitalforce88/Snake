@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SNAKE_PlayerPawnBase_generated_h
 
-#define Snake_Source_Snake_PlayerPawnBase_h_12_SPARSE_DATA
-#define Snake_Source_Snake_PlayerPawnBase_h_12_RPC_WRAPPERS
-#define Snake_Source_Snake_PlayerPawnBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Snake_Source_Snake_PlayerPawnBase_h_12_INCLASS_NO_PURE_DECLS \
+#define Snake_Source_Snake_PlayerPawnBase_h_16_SPARSE_DATA
+#define Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS
+#define Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Snake_Source_Snake_PlayerPawnBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawnBase(); \
 	friend struct Z_Construct_UClass_APlayerPawnBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawnBase)
 
 
-#define Snake_Source_Snake_PlayerPawnBase_h_12_INCLASS \
+#define Snake_Source_Snake_PlayerPawnBase_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlayerPawnBase(); \
 	friend struct Z_Construct_UClass_APlayerPawnBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawnBase)
 
 
-#define Snake_Source_Snake_PlayerPawnBase_h_12_STANDARD_CONSTRUCTORS \
+#define Snake_Source_Snake_PlayerPawnBase_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerPawnBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlayerPawnBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Snake_Source_Snake_PlayerPawnBase_h_12_ENHANCED_CONSTRUCTORS \
+#define Snake_Source_Snake_PlayerPawnBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlayerPawnBase(APlayerPawnBase&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlayerPawnBase)
 
 
-#define Snake_Source_Snake_PlayerPawnBase_h_12_PRIVATE_PROPERTY_OFFSET
-#define Snake_Source_Snake_PlayerPawnBase_h_9_PROLOG
-#define Snake_Source_Snake_PlayerPawnBase_h_12_GENERATED_BODY_LEGACY \
+#define Snake_Source_Snake_PlayerPawnBase_h_16_PRIVATE_PROPERTY_OFFSET
+#define Snake_Source_Snake_PlayerPawnBase_h_13_PROLOG
+#define Snake_Source_Snake_PlayerPawnBase_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Snake_Source_Snake_PlayerPawnBase_h_12_PRIVATE_PROPERTY_OFFSET \
-	Snake_Source_Snake_PlayerPawnBase_h_12_SPARSE_DATA \
-	Snake_Source_Snake_PlayerPawnBase_h_12_RPC_WRAPPERS \
-	Snake_Source_Snake_PlayerPawnBase_h_12_INCLASS \
-	Snake_Source_Snake_PlayerPawnBase_h_12_STANDARD_CONSTRUCTORS \
+	Snake_Source_Snake_PlayerPawnBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	Snake_Source_Snake_PlayerPawnBase_h_16_SPARSE_DATA \
+	Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS \
+	Snake_Source_Snake_PlayerPawnBase_h_16_INCLASS \
+	Snake_Source_Snake_PlayerPawnBase_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Snake_Source_Snake_PlayerPawnBase_h_12_GENERATED_BODY \
+#define Snake_Source_Snake_PlayerPawnBase_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Snake_Source_Snake_PlayerPawnBase_h_12_PRIVATE_PROPERTY_OFFSET \
-	Snake_Source_Snake_PlayerPawnBase_h_12_SPARSE_DATA \
-	Snake_Source_Snake_PlayerPawnBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Snake_Source_Snake_PlayerPawnBase_h_12_INCLASS_NO_PURE_DECLS \
-	Snake_Source_Snake_PlayerPawnBase_h_12_ENHANCED_CONSTRUCTORS \
+	Snake_Source_Snake_PlayerPawnBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	Snake_Source_Snake_PlayerPawnBase_h_16_SPARSE_DATA \
+	Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Snake_Source_Snake_PlayerPawnBase_h_16_INCLASS_NO_PURE_DECLS \
+	Snake_Source_Snake_PlayerPawnBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -1,0 +1,5 @@
+C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Development\Snake\Definitions.Snake.h
+C:\Users\User\Documents\Repositories\Snake\Source\Snake\SnakeBase.h
+C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Inc\Snake\SnakeBase.generated.h
+C:\Users\User\Documents\Repositories\Snake\Source\Snake\SnakeElementBase.h
+C:\Users\User\Documents\Repositories\Snake\Intermediate\Build\Win64\UE4Editor\Inc\Snake\SnakeElementBase.generated.h
