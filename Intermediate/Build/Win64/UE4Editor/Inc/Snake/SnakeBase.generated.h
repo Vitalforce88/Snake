@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SNAKE_SnakeBase_generated_h
 
-#define Snake_Source_Snake_SnakeBase_h_14_SPARSE_DATA
-#define Snake_Source_Snake_SnakeBase_h_14_RPC_WRAPPERS
-#define Snake_Source_Snake_SnakeBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define Snake_Source_Snake_SnakeBase_h_14_INCLASS_NO_PURE_DECLS \
+#define Snake_Source_Snake_SnakeBase_h_22_SPARSE_DATA
+#define Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS
+#define Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS_NO_PURE_DECLS
+#define Snake_Source_Snake_SnakeBase_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASnakeBase(); \
 	friend struct Z_Construct_UClass_ASnakeBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ASnakeBase)
 
 
-#define Snake_Source_Snake_SnakeBase_h_14_INCLASS \
+#define Snake_Source_Snake_SnakeBase_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesASnakeBase(); \
 	friend struct Z_Construct_UClass_ASnakeBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ASnakeBase)
 
 
-#define Snake_Source_Snake_SnakeBase_h_14_STANDARD_CONSTRUCTORS \
+#define Snake_Source_Snake_SnakeBase_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASnakeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASnakeBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Snake_Source_Snake_SnakeBase_h_14_ENHANCED_CONSTRUCTORS \
+#define Snake_Source_Snake_SnakeBase_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASnakeBase(ASnakeBase&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASnakeBase)
 
 
-#define Snake_Source_Snake_SnakeBase_h_14_PRIVATE_PROPERTY_OFFSET
-#define Snake_Source_Snake_SnakeBase_h_11_PROLOG
-#define Snake_Source_Snake_SnakeBase_h_14_GENERATED_BODY_LEGACY \
+#define Snake_Source_Snake_SnakeBase_h_22_PRIVATE_PROPERTY_OFFSET
+#define Snake_Source_Snake_SnakeBase_h_19_PROLOG
+#define Snake_Source_Snake_SnakeBase_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Snake_Source_Snake_SnakeBase_h_14_PRIVATE_PROPERTY_OFFSET \
-	Snake_Source_Snake_SnakeBase_h_14_SPARSE_DATA \
-	Snake_Source_Snake_SnakeBase_h_14_RPC_WRAPPERS \
-	Snake_Source_Snake_SnakeBase_h_14_INCLASS \
-	Snake_Source_Snake_SnakeBase_h_14_STANDARD_CONSTRUCTORS \
+	Snake_Source_Snake_SnakeBase_h_22_PRIVATE_PROPERTY_OFFSET \
+	Snake_Source_Snake_SnakeBase_h_22_SPARSE_DATA \
+	Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS \
+	Snake_Source_Snake_SnakeBase_h_22_INCLASS \
+	Snake_Source_Snake_SnakeBase_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Snake_Source_Snake_SnakeBase_h_14_GENERATED_BODY \
+#define Snake_Source_Snake_SnakeBase_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Snake_Source_Snake_SnakeBase_h_14_PRIVATE_PROPERTY_OFFSET \
-	Snake_Source_Snake_SnakeBase_h_14_SPARSE_DATA \
-	Snake_Source_Snake_SnakeBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	Snake_Source_Snake_SnakeBase_h_14_INCLASS_NO_PURE_DECLS \
-	Snake_Source_Snake_SnakeBase_h_14_ENHANCED_CONSTRUCTORS \
+	Snake_Source_Snake_SnakeBase_h_22_PRIVATE_PROPERTY_OFFSET \
+	Snake_Source_Snake_SnakeBase_h_22_SPARSE_DATA \
+	Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	Snake_Source_Snake_SnakeBase_h_22_INCLASS_NO_PURE_DECLS \
+	Snake_Source_Snake_SnakeBase_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -89,5 +89,14 @@ template<> SNAKE_API UClass* StaticClass<class ASnakeBase>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Snake_Source_Snake_SnakeBase_h
 
+
+#define FOREACH_ENUM_EMOVEMENTDIRECTION(op) \
+	op(EMovementDirection::UP) \
+	op(EMovementDirection::DOWN) \
+	op(EMovementDirection::LEFT) \
+	op(EMovementDirection::RIGHT) 
+
+enum class EMovementDirection;
+template<> SNAKE_API UEnum* StaticEnum<EMovementDirection>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

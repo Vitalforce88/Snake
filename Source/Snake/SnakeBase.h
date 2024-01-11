@@ -8,6 +8,14 @@
 
 class ASnakeElementBase;
 
+UENUM()
+enum class EMovementDirection {
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT
+};
+
 UCLASS()
 class SNAKE_API ASnakeBase : public AActor
 {
@@ -18,7 +26,20 @@ public:
 	ASnakeBase();
 
 	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<ASnakeElementBase>SnakeElementClass;
+	TSubclassOf<ASnakeElementBase> SnakeElementClass;
+
+	//Переменная отвечающая за размер элемента змейки
+	UPROPERTY(EditDefaultsOnly) // открываем для редактирования в блюпринтах
+	float ElementSize;
+
+	UPROPERTY(EditDefaultsOnly)
+	float MovementSpeed;
+
+	UPROPERTY()
+	TArray<ASnakeElementBase*> SnakeElements;
+
+	UPROPERTY()
+	EMovementDirection LastMoveDirection;
 
 protected:
 	// Called when the game starts or when spawned
@@ -28,4 +49,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//Добавляет элементы в конец змейки
+	void AddSnakeElement(int ElementsNum = 1);
+
+	//Функция движения змейки
+	void Move(float DeltaTime);
 };
