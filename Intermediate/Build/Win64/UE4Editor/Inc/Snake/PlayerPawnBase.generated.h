@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SNAKE_PlayerPawnBase_generated_h
 
 #define Snake_Source_Snake_PlayerPawnBase_h_16_SPARSE_DATA
-#define Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS
-#define Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandlePlayerHorizontalInput); \
+	DECLARE_FUNCTION(execHandlePlayerVerticalInput);
+
+
+#define Snake_Source_Snake_PlayerPawnBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandlePlayerHorizontalInput); \
+	DECLARE_FUNCTION(execHandlePlayerVerticalInput);
+
+
 #define Snake_Source_Snake_PlayerPawnBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawnBase(); \

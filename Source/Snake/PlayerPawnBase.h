@@ -38,4 +38,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	void CreateSnakeActor();
+
+	UFUNCTION()
+	void HandlePlayerVerticalInput(float value);// должен подходить по сигнатуре(комбинации аргументов)
+	UFUNCTION()
+	void HandlePlayerHorizontalInput(float value);
 };

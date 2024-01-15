@@ -53,5 +53,5 @@ public:
 	void AddSnakeElement(int ElementsNum = 1);
 
 	//Функция движения змейки
-	void Move(float DeltaTime);
+	void Move();
 };

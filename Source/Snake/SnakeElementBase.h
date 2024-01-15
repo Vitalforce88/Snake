@@ -28,4 +28,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintNativeEvent)// Разрешает перегрузку в блюпринтах
+	void SetFirstElementType();
+	void SetFirstElementType_Implementation();
+
 };

@@ -14,8 +14,19 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SNAKE_SnakeElementBase_generated_h
 
 #define Snake_Source_Snake_SnakeElementBase_h_14_SPARSE_DATA
-#define Snake_Source_Snake_SnakeElementBase_h_14_RPC_WRAPPERS
-#define Snake_Source_Snake_SnakeElementBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Snake_Source_Snake_SnakeElementBase_h_14_RPC_WRAPPERS \
+	virtual void SetFirstElementType_Implementation(); \
+ \
+	DECLARE_FUNCTION(execSetFirstElementType);
+
+
+#define Snake_Source_Snake_SnakeElementBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetFirstElementType);
+
+
+#define Snake_Source_Snake_SnakeElementBase_h_14_EVENT_PARMS
+#define Snake_Source_Snake_SnakeElementBase_h_14_CALLBACK_WRAPPERS
 #define Snake_Source_Snake_SnakeElementBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASnakeElementBase(); \
@@ -59,13 +70,17 @@ public: \
 
 
 #define Snake_Source_Snake_SnakeElementBase_h_14_PRIVATE_PROPERTY_OFFSET
-#define Snake_Source_Snake_SnakeElementBase_h_11_PROLOG
+#define Snake_Source_Snake_SnakeElementBase_h_11_PROLOG \
+	Snake_Source_Snake_SnakeElementBase_h_14_EVENT_PARMS
+
+
 #define Snake_Source_Snake_SnakeElementBase_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Snake_Source_Snake_SnakeElementBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	Snake_Source_Snake_SnakeElementBase_h_14_SPARSE_DATA \
 	Snake_Source_Snake_SnakeElementBase_h_14_RPC_WRAPPERS \
+	Snake_Source_Snake_SnakeElementBase_h_14_CALLBACK_WRAPPERS \
 	Snake_Source_Snake_SnakeElementBase_h_14_INCLASS \
 	Snake_Source_Snake_SnakeElementBase_h_14_STANDARD_CONSTRUCTORS \
 public: \
@@ -78,6 +93,7 @@ public: \
 	Snake_Source_Snake_SnakeElementBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	Snake_Source_Snake_SnakeElementBase_h_14_SPARSE_DATA \
 	Snake_Source_Snake_SnakeElementBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Snake_Source_Snake_SnakeElementBase_h_14_CALLBACK_WRAPPERS \
 	Snake_Source_Snake_SnakeElementBase_h_14_INCLASS_NO_PURE_DECLS \
 	Snake_Source_Snake_SnakeElementBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \
