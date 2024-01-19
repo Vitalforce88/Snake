@@ -8,14 +8,28 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ASnakeElementBase;
+class AActor;
 #ifdef SNAKE_SnakeBase_generated_h
 #error "SnakeBase.generated.h already included, missing '#pragma once' in SnakeBase.h"
 #endif
 #define SNAKE_SnakeBase_generated_h
 
 #define Snake_Source_Snake_SnakeBase_h_22_SPARSE_DATA
-#define Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS
-#define Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS_NO_PURE_DECLS
+#define Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSnakeElementOverlap); \
+	DECLARE_FUNCTION(execMove); \
+	DECLARE_FUNCTION(execAddSnakeElement);
+
+
+#define Snake_Source_Snake_SnakeBase_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSnakeElementOverlap); \
+	DECLARE_FUNCTION(execMove); \
+	DECLARE_FUNCTION(execAddSnakeElement);
+
+
 #define Snake_Source_Snake_SnakeBase_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASnakeBase(); \

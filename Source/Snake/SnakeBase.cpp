@@ -3,6 +3,7 @@
 
 #include "SnakeBase.h"
 #include "SnakeElementBase.h"
+#include "Interactable.h"
 
 
 // Sets default values
@@ -37,10 +38,12 @@ void ASnakeBase::AddSnakeElement(int ElementsNum)
 		FTransform NewTransform(GetActorLocation() - NewLocation);
 		// Явно указываем тип ASnakeElementBase*(тип auto не пойдёт)
 		ASnakeElementBase *NewSnakeElem = GetWorld()->SpawnActor<ASnakeElementBase>(SnakeElementClass, NewTransform);
+		NewSnakeElem->SnakeOwner = this;
 		// Присоединяем Actor(а) к змейке
 		int32 ElemIndex = SnakeElements.Add(NewSnakeElem);
 		if (ElemIndex == 0) {
 			NewSnakeElem->SetFirstElementType();
+
 		}
 	}
 
@@ -66,6 +69,9 @@ void ASnakeBase::Move()
 		MovementVector.Y -= MovementSpeed;
 		break;
 	}
+
+	SnakeElements[0]->ToggleCollision();
+
 	//Добавляем логику, отвечающую за движение чвоста змейки за головой
 	for (int i = SnakeElements.Num() - 1; i > 0; i--) {
 		auto CurrentElement = SnakeElements[i];
@@ -74,6 +80,21 @@ void ASnakeBase::Move()
 		CurrentElement->SetActorLocation(PrevLocation);
 	}
 	SnakeElements[0]->AddActorWorldOffset(MovementVector);
+	SnakeElements[0]->ToggleCollision();
+}
 
+void ASnakeBase::SnakeElementOverlap(ASnakeElementBase *OverlappedBlock, AActor* Other)
+{
+	if (IsValid(OverlappedBlock))
+	{
+		int32 ElemIndex;
+		SnakeElements.Find(OverlappedBlock, ElemIndex);
+		bool bIsFirst = ElemIndex == 0;
+		IInteractable *InteractableInterface = Cast<IInteractable>(Other);
+		if (InteractableInterface) 
+		{
+			InteractableInterface->Interact(this,bIsFirst);
+		}
+	}
 }
 

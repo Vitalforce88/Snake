@@ -48,10 +48,12 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	UFUNCTION(BlueprintCallable)
 	//Добавляет элементы в конец змейки
 	void AddSnakeElement(int ElementsNum = 1);
-
+	UFUNCTION(BlueprintCallable)
 	//Функция движения змейки
 	void Move();
+	UFUNCTION()
+	void SnakeElementOverlap(ASnakeElementBase *OverlappedBlock, AActor* Other);
 };
